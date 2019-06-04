@@ -21,8 +21,12 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-body, html{
+body, html {
   height:100%;
+}
+
+body {
+
   background: url(src/background.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -41,24 +45,19 @@ body{
 }
 
 .topbar{
-  height:75px;
+  height: 10%;
   padding-top: 50px;
   padding-left: 100px;
   padding-bottom: 25px;
-  /* background-color: rgba(255, 255, 255, .25);; */
+  background-color: rgba(255, 255, 255, .25);;
+}
+
+.dancefloor {
+  height: 90%;
 }
 
 .dancer{
-  border:15px solid pink;
-  border-radius:15px;
   position:absolute;
-}
-
-.bouncydancer{
-  /* temp hack, fix when all images */
-  border:1px solid rgba(189, 94, 124, 0);
-  border-radius:10px;
-  /* position:absolute; */
   width:   100px;
   height:  90px;
   background-image: url(src/elephant-icon.png);
@@ -66,14 +65,28 @@ body{
   background-size: contain; 
 }
 
+.bouncydancer{
+  /* position:absolute; */
+  width:   100px;
+  height:  90px;
+  background-image: url(src/bunny.png);
+  background-repeat: no-repeat;
+  background-size: contain; 
+}
+
 .happydancer {
-  border: 15px solid ;
-  border-radius:0px;
   position: absolute;
+  width:   100px;
+  height:  90px;
+  background-image: url(src/owl.png);
+  background-repeat: no-repeat;
+  background-size: contain; 
 }
 
 .happydancer:hover {
-  border: 20px solid blue; 
+  width:   200px;
+  height:  180px;
+  /* border: 20px solid blue;  */
 }
 
 
