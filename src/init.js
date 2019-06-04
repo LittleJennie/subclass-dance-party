@@ -29,4 +29,19 @@ $(document).ready(function() {
     );
     $('.dancefloor').append(dancer.$node);
   });
+
+  $('.addLineUp').on('click', function(event) {
+    // select all '.dancer'. 
+    // reset position, use forEach maybe? 
+    // var styleSettings = {
+    //   top: 500px,
+    // };
+    // this.$node.css(styleSettings);
+  });
+
+  $('.clearFloor').on('click', function(event){
+    $('.dancefloor').empty();
+    
+  });
+
 });

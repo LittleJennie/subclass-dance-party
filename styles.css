@@ -67,6 +67,15 @@ body{
   background-size: contain; 
 }
 
+.blinkydancer{
+  position:absolute;
+  /* width:   100px;
+  height:  90px; */
+  background-image: url(src/elephant-icon.png);
+  background-repeat: no-repeat;
+  background-size: contain; 
+}
+
 @keyframes bounce {
   from { transform: translate3d(0, 0, 0);     }
   to   { transform: translate3d(0, 150px, 0); }
@@ -78,8 +87,8 @@ body{
   animation-direction: alternate;
   animation-timing-function: cubic-bezier(.5,0.05,1,.5);
   animation-iteration-count: infinite;
-  width:   100px;
-  height:  90px;
+  /* width:   100px;
+  height:  90px; */
   background-image: url(src/bunny.png);
   background-repeat: no-repeat;
   background-size: contain; 
@@ -101,6 +110,8 @@ body{
   /* border: 20px solid blue;  */
 }
 
+.clearFloor,
+.addLineUpButton,
 .addDancerButton {
 	margin: 30px 10px;
 	padding: 10px 10px 11px;

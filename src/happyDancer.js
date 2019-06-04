@@ -2,7 +2,6 @@ var makeHappyDancer = function(top, left, timeBetweenSteps) {
   //var blinkyDancer = makeDancer(top, left, timeBetweenSteps);
   makeDancer.call(this, top, left, timeBetweenSteps);
   this.$node.addClass('happydancer');
-  this.$node.removeClass('dancer');
   this.deg = 0;
 };
 
