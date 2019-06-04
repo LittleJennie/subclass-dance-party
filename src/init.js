@@ -28,20 +28,20 @@ $(document).ready(function() {
       Math.random() * 1000
     );
     $('.dancefloor').append(dancer.$node);
+    window.dancers.push(dancer);
   });
 
-  $('.addLineUp').on('click', function(event) {
-    // select all '.dancer'. 
-    // reset position, use forEach maybe? 
-    // var styleSettings = {
-    //   top: 500px,
-    // };
-    // this.$node.css(styleSettings);
+  $('.addLineUpButton').on('click', function(event) {
+    var dancerArr = window.dancers;
+    console.log(dancerArr);
+    for (let i = 0; i < dancerArr.length; i++) {
+      dancerArr[i].reset(); 
+    }
   });
 
   $('.clearFloor').on('click', function(event){
     $('.dancefloor').empty();
-    
+    window.dancer.splice(0, window.dancer.length);
   });
 
 });

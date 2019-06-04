@@ -32,3 +32,11 @@ makeDancer.prototype.setPosition = function(top, left) {
   };
   this.$node.css(styleSettings);
 };
+
+makeDancer.prototype.reset = function () {
+
+  var resetSetting = {
+    top: '500px'
+  }
+  this.$node.css(resetSetting);
+}
