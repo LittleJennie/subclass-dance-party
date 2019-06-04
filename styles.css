@@ -1,27 +1,100 @@
+/*RESET*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
 body, html{
   height:100%;
+  background: url(src/background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
+
 body{
+  color: darkslategray;
   margin: 0px;
-  background-color:#444;
-  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+  font-size: 45px;
+  font-weight: bold;
+  /* padding-left: 30px; */
+  /* padding-top: 30px; */
 }
-body, a:link, a:visited, a:active{
-  color: lightblue;
-}
-.title, .addDancerButton{
-  padding:5px 12px;
-  float:right;
-}
+
 .topbar{
-  height:32px;
-  background-color: #555;
+  height:75px;
+  padding-top: 50px;
+  padding-left: 100px;
+  padding-bottom: 25px;
+  /* background-color: rgba(255, 255, 255, .25);; */
 }
-.title{
-  background-color: #777;
-}
+
 .dancer{
-  border:10px solid red;
-  border-radius:10px;
+  border:15px solid pink;
+  border-radius:15px;
   position:absolute;
 }
+
+.bouncydancer{
+  /* temp hack, fix when all images */
+  border:1px solid rgba(189, 94, 124, 0);
+  border-radius:10px;
+  /* position:absolute; */
+  width:   100px;
+  height:  90px;
+  background-image: url(src/elephant-icon.png);
+  background-repeat: no-repeat;
+  background-size: contain; 
+}
+
+.happydancer {
+  border: 15px solid ;
+  border-radius:0px;
+  position: absolute;
+}
+
+.happydancer:hover {
+  border: 20px solid blue; 
+}
+
+
+.addDancerButton {
+	margin: 30px 10px;
+	padding: 10px 10px 11px;
+	font-size: 15px;
+	background-color: rgba(189, 94, 124, .25);
+	font-weight: bold;
+	color:  darkslategray; 
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+.addDancerButton:hover {
+  background-color: rgba(255, 255, 255, .5);
+  color: gray;
+	cursor: pointer;
+}
+
+.addDancerButton:first-child {
+  margin-left: 30 px; 
+}
+
