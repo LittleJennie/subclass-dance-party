@@ -23,6 +23,7 @@ time, mark, audio, video {
 
 body, html {
   height:100%;
+  width: 100%;
 }
 
 body {
@@ -54,6 +55,7 @@ body{
 
 .dancefloor {
   height: 90%;
+  position: relative;
 }
 
 .dancer{
@@ -65,13 +67,23 @@ body{
   background-size: contain; 
 }
 
+@keyframes bounce {
+  from { transform: translate3d(0, 0, 0);     }
+  to   { transform: translate3d(0, 150px, 0); }
+}
+
 .bouncydancer{
   /* position:absolute; */
+  animation: bounce 0.5s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(.5,0.05,1,.5);
+  animation-iteration-count: infinite;
   width:   100px;
   height:  90px;
   background-image: url(src/bunny.png);
   background-repeat: no-repeat;
   background-size: contain; 
+ 
 }
 
 .happydancer {
@@ -88,7 +100,6 @@ body{
   height:  180px;
   /* border: 20px solid blue;  */
 }
-
 
 .addDancerButton {
 	margin: 30px 10px;
@@ -110,4 +121,5 @@ body{
 .addDancerButton:first-child {
   margin-left: 30 px; 
 }
+
 
