@@ -49,15 +49,20 @@ body{
 }
 
 .dancer{
-  border:15px solid pink;
-  border-radius:15px;
+  /* border:15px solid pink; */
+  /* border-radius:15px; */
   position:absolute;
 }
 
 .bouncydancer{
-  border:15px solid purple;
-  border-radius:10px;
-  position:absolute;
+  /* border:15px solid purple; */
+  /* border-radius:10px; */
+  /* position:absolute; */
+  width:   100px;
+  height:  90px;
+  background-image: url(src/elephant-icon.png);
+  background-repeat: no-repeat;
+  background-size: contain; 
 }
 
 .happydancer {
