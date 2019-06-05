@@ -26,3 +26,11 @@ makeHappyDancer.prototype.step = function() {
   );
   this.deg += 20;
 };
+
+makeHappyDancer.prototype.reset = function () {
+
+  var resetSetting = {
+    top: '300px'
+  }
+  this.$node.css(resetSetting);
+}
